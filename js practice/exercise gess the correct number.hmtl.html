@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess the number </title>
+</head>
+<body>
+    <h1>gess the number </h1>
+    <script>
+       let guesses = 0;
+       let randomnumber = Math.floor(Math.random() * 100);
+       while (userguess != randomnumber) {
+        let userguess = prompt(("enter your gusses"))
+        let guesses = guesses + 1
+        if (userguess < randomnumber) {
+            console.log("enter a small number");
+        }
+        else if(userguess < randomnumber)
+        console.log("enter a big number");
+       }
+       else {
+        console.log(`congrats you guessed it rigth, your score is', 100- guesses`);
+       }
+
+    </script>
+</body>
+</html>

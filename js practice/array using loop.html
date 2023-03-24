@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array using loop</title>
+</head>
+<body>
+    <script>
+//example of for loop in array print
+        let num =[1,2,3,4,5,6,7,8,9,11]
+        for (let i = 0; i <num.length; i++) {
+            console.log(num[i]);
+        }
+//example of for.each loop
+
+let dig =[1,2,3,4,5,6,7,8,9,11]
+dig.forEach(element => {
+    console.log(element * element);
+});
+
+
+//array.from example
+let name ="raxit"
+    let arr = Array.from (name)
+    console.log(arr);
+//for....of loop array 
+ for (let i of num ) {
+    console.log(i);
+    
+ }
+    </script>
+</body>
+</html>

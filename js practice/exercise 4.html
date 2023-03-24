@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-4 </title>
+</head>
+<body>
+    <script>
+        // Q-1
+        let rax = "har\""
+        console.log(rax.length);
+   
+
+// Q-2
+        let sentence="the quick brown fox jumps over the lazy dog";
+        const word= "fox"
+        // console.log(sentence.includes(word));
+        console.log(`the word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentance `);
+        console.log(sentence.startsWith('the'));//example of start with
+        console.log(sentence.startsWith('quick'));
+        console.log(sentence.endsWith('dog'));//example of end with
+        console.log(sentence.endsWith('lazy'));
+        // Q-3
+let name="HELLO I AM JAVA SCRIPT LERNER"
+console.log(name.toLowerCase('name'));
+// Q-4 Extract the amount out of this string
+let str1="Please give Rs 1000 "
+// let num =Number.parseInt(str1.slice("please give Rs".length))        //answer-1(answer 1 and 2 any two of 1 is run because same variable not deceler 2 times in one code )
+let num =Number.parseInt(str1.slice(15))//answer-2   //this is a examaple of slice that means how to divide a string
+console.log(num);
+console.log(typeof num);//this is a example of types of string 
+ 
+
+
+
+// Q-4
+ let bhai="nikhil"
+ bhai[3]="r"
+ console.log(bhai);// bhai is not change ,because string is immutable and you make new string that's has been change bel but excesting string has not been changebel 
+    </script>
+</body>
+</html>
