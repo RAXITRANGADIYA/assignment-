@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list item task </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: teal;
+            color: antiquewhite;
+            margin-top: 10px;
+        }
+
+        .box {
+            width: 300px;
+            margin: auto;
+        }
+
+        p {
+            border-top: 2px dashed;
+            border-color: rgb(228, 150, 33) !important;
+            margin: 0;
+            padding: 30px;
+            counter-increment: section;
+            position: relative;
+        }
+
+        p:nth-child(even):before {
+
+            content: counter(section);
+            right: 100%;
+            margin-right: -20px;
+            position: absolute;
+            border-radius: 50%;
+            padding: 10px;
+            height: 20px;
+            width: 20px;
+            background-color: blue;
+            text-align: center;
+            color: white;
+            font-size: 110%;
+        }
+        p:nth-child(odd):before {
+            content: counter(section);
+            left: 100%;
+            margin-left: -20px;
+            position: absolute;
+            border-radius: 50%;
+            padding: 10px;
+            height: 20px;
+            width: 20px;
+            background-color: blue;
+            text-align: center;
+            color: white;
+            font-size: 110%;
+        }
+        p:nth-child(even) {
+            border-left: 2px dashed;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            margin-right: 30px;
+            padding-right: 0;
+        }
+
+        p:nth-child(odd) {
+            border-right: 2px dashed;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            margin-left: 30px;
+            padding-left: 0;
+        }
+
+        p:first-child {
+            border-top: 0;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        p:last-child {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi amet libero deleniti, vel
+            laudantium. Delectus, iste ea animi eius porro sed a, eligendi maiores facere unde dignissimos vero
+            deleniti!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi amet libero deleniti, vel
+            laudantium. Delectus, iste ea animi eius porro sed a, eligendi maiores facere unde dignissimos vero
+            deleniti!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi amet libero deleniti, vel
+            laudantium. Delectus, iste ea animi eius porro sed a, eligendi maiores facere unde dignissimos vero
+            deleniti!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi amet libero deleniti, vel
+            laudantium. Delectus, iste ea animi eius porro sed a, eligendi maiores facere unde dignissimos vero
+            deleniti!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi amet libero deleniti, vel
+            laudantium. Delectus, iste ea animi eius porro sed a, eligendi maiores facere unde dignissimos vero
+            deleniti!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi amet libero deleniti, vel
+            laudantium. Delectus, iste ea animi eius porro sed a, eligendi maiores facere unde dignissimos vero
+            deleniti!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi amet libero deleniti, vel
+            laudantium. Delectus, iste ea animi eius porro sed a, eligendi maiores facere unde dignissimos vero
+            deleniti!</p>
+    </div>
+</body>
+
+</html>
