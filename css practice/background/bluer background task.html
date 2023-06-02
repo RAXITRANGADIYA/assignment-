@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg with middle blur box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+            /* background-color: aqua; */
+        }
+
+        .bg {
+            margin: 0 auto;
+            background-image: url(./task1BgImg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        .box {
+
+            /* opacity: 90%; */
+            width: 500px;
+            height: 150px;
+            margin: 0 auto;
+            padding-top: 150px;
+        }
+        
+        .box-1 {
+            background-color: transparent;
+            backdrop-filter:blur(7px) ;
+            /* backdrop-filter: blur(90%); */
+            /* backdrop-filter: blur(12%); */
+            /* background-e: blur(100%); */
+            border: 1px solid black;
+            color: red;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg">
+            <div class="box">
+                <div class="box-1">
+                    <h1>blured background</h1>
+                    <h2>by. <u> ariona rino</u></h2>
+                    <h2>drag this box to move around</h2>
+                    <P>SEE ALSO:<strong>STAGED DROPDOWN ANIMATION</strong></P>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
