@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task -2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+div{
+    border: 1px dashed black;
+    text-align: center;
+    line-height: 58px;
+
+}
+        .flex {
+            display: flex;
+        }
+        .w1100{
+            width: 1100px;
+        }
+        .col-50{
+            width: 50%;
+        }
+        .col-33{
+            width: 33.33%;
+        }
+        .part-1,.part-3{
+            height: 150px;
+        }
+        .part-2{
+            height: 120px;
+        }
+        .height-50{
+            height: 50%;
+        }
+        .menu1{
+            background-color: rgb(41, 75, 75);
+        }
+        .menu2{
+background-color: rgb(18, 235, 163);
+        }
+        .menu3{
+            height: 120px;
+            background-color: rgb(129, 248, 248);
+        }
+        
+        .menu4{
+background-color: rgb(214, 173, 123);
+        }
+        .menu5{
+background-color: rgba(0, 0, 255, 0.283);
+        }
+        .menu6{
+background-color: rgb(86, 83, 89);
+        }     
+        .menu7{
+background-color: rgb(232, 161, 135);
+        }
+        .menu8{
+background-color: rgb(138, 66, 166);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="part-1 w1100 flex">
+            <div class="col-50 menu1">menu-1</div>
+            <div class="col-50 menu2">menu-2</div>
+        </div>
+        <div class="part-2 w1100 flex">
+            <div class="3 col-50">
+                <div class="menu3">menu-3</div>
+            </div>
+            <div class="45 col-50">
+                <div class="menu4 height-50">menu-4</div>
+                <div class="menu5 height-50">menu-5</div>
+            </div>
+        </div>
+        <div class="part-3 w1100 flex">
+            <div class="menu6 col-33">menu-6</div>
+            <div class="menu7 col-33">menu-7</div>
+            <div class="menu8 col-33">menu-8</div>
+        </div>
+    </div>
+</body>
+
+</html>
