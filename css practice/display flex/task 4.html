@@ -31,39 +31,105 @@
             border: 4px ridge rgb(38, 34, 40);
         }
 
-        .flex {
-            display: flex;
-        }
-
+        /* row=1 */
         .row-1 {
             height: 150px;
             background-color: antiquewhite;
             border: 4px ridge grey;
             display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
         }
 
+
+        /* row 1 -box-1 */
+        .p1 {
+
+            background-color: rgba(123, 255, 123, 0.76);
+            height: 130px;
+            width: 200px;
+            display: flex;
+            margin: 6px 9px;
+            padding: 5px;
+            /* justify-content: center;
+            align-items: center; */
+
+        }
+
+        .s1 {
+            height: 10px;
+
+            width: 180px;
+            margin: 0 auto;
+            background-color: rgba(253, 184, 195, 0.769);
+            /* display: flex; */
+            align-self: flex-end;
+            padding: 5px;
+        }
+
+        /* -box-2 */
+        .p2 {
+            background-color: rgba(255, 165, 123, 0.76);
+            height: 130px;
+            margin: 6px 9px;
+            padding: 10px;
+
+            width: 230px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sp1 {
+            width: 40px;
+            height: 100px;
+            display: flex;
+            background-color: rgba(123, 255, 123, 0.76);
+        }
+
+        .sp11 {
+            background-color: rgba(255, 165, 123, 0.76);
+            height: 20px;
+            width: 35px;
+            margin: 2px 2px;
+            flex-direction: column;
+        }
+
+        .sp2 {
+            width: 20px;
+            height: 100px;
+            background-color: rgba(123, 255, 123, 0.76);
+        }
+        
+        .sp3 {
+            width: 20px;
+            height: 100px;
+            background-color: rgba(123, 255, 123, 0.76);
+        }
+        
+        /* row-2 */
         .row-2 {
             height: 250px;
             background-color: antiquewhite;
             border: 4px ridge grey;
             display: flex;
-        }
-
-        .p1 {
-            background-color: rgba(94, 249, 94, 0.76);
-            height: 130px;
-            width: 200px;
-            margin: 10px;
-            /* align-items: center; */
-
+            align-items: center;
             justify-content: center;
-
         }
-
-       
-
-       
-     
+        
+        /* row-2- box-1 */
+        .p3 {
+            height: 230px;
+            width: 100px;
+            background-color: rgba(123, 255, 123, 0.76);
+            margin: 10px;
+        }
+        .p4{
+        height: 230px;
+        width: 300px;
+        background-color: rgba(123, 255, 123, 0.76);
+            
+}        
+        /* row-2- box-2 */
     </style>
 </head>
 
@@ -74,23 +140,20 @@
                 <div class="s1"></div>
             </div>
             <div class="p2">
-                <div class="sec1">
-                    <div class="a1">
-                        <div class="b1"></div>
-                    </div>
-                    <div class="a2"></div>
-                    <div class="a2"></div>
+                <div class="sp1">
+                    <div class="sp11"></div>
                 </div>
+                <div class="sp2"></div>
+                <div class="sp3"></div>
             </div>
         </div>
         <div class="row-2">
             <div class="p3">
-                <div class="sec3"></div>
+
             </div>
-            <div class="p4">
-                <div class="sec4"></div>
-            </div>
+            <div class="p4"></div>
         </div>
+    </div>
     </div>
 </body>
 
