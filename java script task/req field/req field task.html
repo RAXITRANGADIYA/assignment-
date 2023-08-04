@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation try 2</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form method="post">
+        <table align="center">
+            <tr>
+                <td> <label for="username">User name</label> </td>
+                <td><input type="text" name="username" id="username" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password"> password</label></td>
+                <td><input type="text" name="password" id="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cpassword"> confirm password</label></td>
+                <td><input type="text" name="cpassword" id="cpassword">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email"> email</label></td>
+                <td><input type="text" name="email" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobile">mobile</label> </td>
+                <td><input type="text" name="mobile" id="mobile" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        const inputerror = document.querySelectorAll('[required]');
+        console.log("called");
+        inputerror.forEach((inputs) => {
+            // console.log(ReQuired);
+            inputs.addEventListener("blur", function () {
+                let error = document.createElement("span");
+                const errormsg = document.createTextNode("this field is required");
+                error.appendChild(errormsg);
+                // console.log(this.value);
+                if (this.value == "") {
+                    console.log(this.nextSibling.nodeName);
+                    if (this.nextSibling.nodeName == "SPAN") {
+                        console.log(this.nextSibling.remove());                    
+                        this.nextSibling.remove()
+                    } else {
+                        this.after(error)
+                    }
+                    // this.after(p)
+
+                } else {
+                    console.log(this.nextSibling.remove());
+
+                }
+            })
+        });
+        console.log("called");
+
+
+
+    </script>
+</body>
+
+</html>
