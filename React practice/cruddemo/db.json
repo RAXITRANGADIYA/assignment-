@@ -1,0 +1,88 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": "0",
+      "name": "raxit",
+      "email": "lakumnirali@gmail.qe",
+      "gender": "male",
+      "mobile": 9408850307
+    },
+    {
+      "name": "Colby Barlow",
+      "mobile": "1",
+      "email": "bonosidol@mailinator.com",
+      "id": "1"
+    },
+    {
+      "name": "Lara Church",
+      "mobile": "301212",
+      "email": "nigo@mailinator.com",
+      "id": "d3lvvWo"
+    },
+    {
+      "name": "Maisie Waters",
+      "mobile": "12",
+      "email": "lysopubiq@mailinator.com",
+      "id": "J_675tV"
+    },
+    {
+      "name": "Xandra Bauer",
+      "mobile": "82",
+      "email": "haxal@mailinator.com",
+      "id": "8mzjSvu"
+    },
+    {
+      "name": "Katell Buchanan",
+      "mobile": "12",
+      "email": "nomotup@mailinator.com",
+      "id": "VbfNZl4"
+    },
+    {
+      "name": "Jayme Mcguire",
+      "mobile": "12",
+      "email": "wicaw@mailinator.com",
+      "id": "ACXuo89"
+    },
+    {
+      "name": "Harding Alvarez",
+      "mobile": "15",
+      "email": "fidotehyta@mailinator.com",
+      "id": "ltnm4JW"
+    },
+    {
+      "name": "Hiroko Jenkins",
+      "mobile": "91",
+      "email": "quqibi@mailinator.com",
+      "id": "nPOFWQO"
+    },
+    {
+      "name": "Julian Keller",
+      "mobile": "2",
+      "email": "byjym@mailinator.com",
+      "id": "xo41znr"
+    },
+    {
+      "name": "Julian Keller",
+      "mobile": "1223",
+      "email": "byjym@mailinator.com",
+      "id": "zcni9r8"
+    }
+  ]
+}
