@@ -1,7 +1,7 @@
 import React, { useState }  from "react";
 const CutomHooks=(intval,initerror)=>{
     const[inp,setinp]=useState()
-    console.log(inp);
+    // console.log(inp);
     const handleChange=(e)=>{
         setinp((inp)=>({...inp,[e.target.name]:e.target.value}))
         console.log("called handleChange from custom hook",inp);   

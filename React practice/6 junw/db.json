@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "username": "admin",
+      "password": "123",
+      "email": "admin@mail.com",
+      "gender": "Male",
+      "role_id": 1,
+      "id": 1
+    },
+    {
+      "email": "sdfsd",
+      "fullName": "fsdfsd",
+      "username": "fsdf",
+      "password": "sdf",
+      "role_id": 2,
+      "id": 2
+    },
+    {
+      "email": "data@mail.com",
+      "fullName": "data",
+      "username": "data",
+      "password": "123",
+      "role_id": 2,
+      "id": 3
+    },
+    {
+      "email": "data@mail.com",
+      "fullName": "data",
+      "username": "data",
+      "password": "456",
+      "role_id": 2,
+      "id": 4
+    },
+    {
+      "username": "lekevybix",
+      "password": "Pa$$w0rd!",
+      "email": "rimoge@mailinator.com",
+      "fullName": "Hilda Salas",
+      "role_id": 2,
+      "id": 6
+    }
+  ]
+}

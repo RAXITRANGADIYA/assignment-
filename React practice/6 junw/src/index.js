@@ -1,0 +1,11 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { RouterProvider } from 'react-router-dom';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './index.css';
+import MainRoot from './MainRouter.jsx';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<RouterProvider router={MainRoot} />);

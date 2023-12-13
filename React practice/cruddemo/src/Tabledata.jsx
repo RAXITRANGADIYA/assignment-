@@ -20,14 +20,19 @@ export default function App() {
     const [apidata, setapiData] = useState()
     const [loading, setLoading] = useState(false)
     const [Update, setUpdate] = useState();
-    const[updatestatus,setUpdatestatus]=useState(false)
+    const [updatestatus, setUpdatestatus] = useState(false)
     const { handleChange, inp, updatedData } = CutomHooks(Update)
     const edit = (Update)
-    console.log(edit, "edit");
+    // console.log(edit, "edit");
     useEffect(() => {
         getData()
-        PatchUser()
+       
+        // PatchUser()
     }, [])
+    // console.log("updatestatus",updatestatus);
+    // console.log("update",Update);
+    // console.log("updatedData",updatedData);
+
     const toggleOpen = () => setBasicModal(!insertModel);
     const updatetoggle = () => setBasicupdateModal(!updateModel);
     const getData = async () => {
@@ -102,10 +107,11 @@ export default function App() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(inp)
         })
-        const data=await responce.json()
+        const data = await responce.json()
         setLoading(true)
-        console.log("save changes",data);
+        console.log("save changes", data);
         setUpdatestatus(true)
+        console.log("putin");
         // getData()
     }
     // put END
@@ -171,13 +177,13 @@ export default function App() {
                         <MDBModalBody >
                             <MDBTable >
                                 <tr>
-                                    <td><MDBInput name='name' value={loading ? inp.name : "false"} onChange={handleChange} type='text' label='Name'></MDBInput></td>
+                                    <td><MDBInput name='name' value={loading ? inp.name : ""} onChange={handleChange} type='text' label='Name'></MDBInput></td>
                                 </tr>
                                 <tr >
-                                    <td><MDBInput name='mobile' value={loading ? inp.mobile : "false"} onChange={handleChange} type='number' label='Mobile'></MDBInput></td>
+                                    <td><MDBInput name='mobile' value={loading ? inp.mobile : ""} onChange={handleChange} type='number' label='Mobile'></MDBInput></td>
                                 </tr>
                                 <tr>
-                                    <td><MDBInput name='email' value={loading ? inp.email : "false"} onChange={handleChange} type='email' label='Email'></MDBInput></td>
+                                    <td><MDBInput name='email' value={loading ? inp.email : ""} onChange={handleChange} type='email' label='Email'></MDBInput></td>
                                 </tr>
 
 
@@ -185,10 +191,10 @@ export default function App() {
                         </MDBModalBody>
 
                         <MDBModalFooter>
-                            <MDBBtn color='secondary' onClick={updatetoggle}>
+                            <MDBBtn color='secondary' onClick={()=>{updatetoggle()}}>
                                 Close
                             </MDBBtn>
-                            <MDBBtn onClick={()=>{PutIN();getData()}}>Save changes</MDBBtn>
+                            <MDBBtn onClick={() => { PutIN()}}>Save changes</MDBBtn>
                         </MDBModalFooter>
                     </MDBModalContent>
                 </MDBModalDialog>
